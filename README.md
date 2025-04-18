@@ -10,6 +10,7 @@
 - **NVIDIA 驱动**: >= 515.65.01
 - **操作系统**: 
   - Windows 10/11 (64-bit)
+  - Ubuntu 18.04/20.04/22.04 LTS
 
 ## 安装步骤
 1. 从[Releases页面](https://github.com/gitlid/Vehicle-component-defect-detection-API/releases)下载最新压缩包
