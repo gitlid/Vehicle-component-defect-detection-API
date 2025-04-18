@@ -31,13 +31,15 @@ positional arguments:
 options:
   -h, --help         show this help message and exit
   --workers WORKERS  工作进程数
-
+```
 # 基本启动（默认工作进程=1）
-./fastapi_gpu_CTRS2.exe <端口号> <模型路径>
-
+```bash
+fastapi_gpu_CTRS2.exe <端口号> <模型路径>
+```
 # 示例：在10195端口加载NEU-DET模型
+```bash
 fastapi_gpu_CTRS2.exe 10195 NEU-DET.pt
-
+```
 
 ## 目录结构
 主要目录结构：
