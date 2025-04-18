@@ -43,9 +43,11 @@ fastapi_gpu_CTRS2.exe 10195 NEU-DET.pt
 
 ## 目录结构
 主要目录结构：
+```bash
 fastapi_gpu_CTRS2/
 ├── _internal/  # 各类依赖库
 ├── uploads/    # 存放检测结果的目录，首次检测时创建
 ├── NEU-DET.pt  # 默认提供的检测模型
 └── fastapi_gpu_CTRS2.exe  # 执行文件
+```
     
