@@ -1,13 +1,20 @@
 # 车辆零部件缺陷检测API
 
 ## 简介
-为车辆零部件缺陷检测提供API服务。
+基于YOLO模型的车辆零部件缺陷检测API服务，支持实时检测零部件表面缺陷（裂纹、划痕、凹痕等）。提供RESTful接口，可快速集成到工业质检系统中。
+
+## 系统要求
+推荐环境
+- **CUDA 工具包**: 11.8+
+- **cuDNN**: 8.9.6+ 
+- **NVIDIA 驱动**: >= 515.65.01
+- **操作系统**: 
+  - Windows 10/11 (64-bit)
 
 ## 安装步骤
-下载release内的压缩包解压即可使用
+1. 从[Releases页面](https://github.com/gitlid/Vehicle-component-defect-detection-API/releases)下载最新压缩包
+2. 解压到任意目录（建议路径不含中文或空格）
 
-# 安装依赖
-无需安装依赖，直接运行可执行文件
 
 ## 使用方法
 说明如何使用项目，提供示例代码或命令：# 示例代码
@@ -24,17 +31,18 @@ options:
   -h, --help         show this help message and exit
   --workers WORKERS  工作进程数
 
-服务启动输入样例
+# 基本启动（默认工作进程=1）
+./fastapi_gpu_CTRS2.exe <端口号> <模型路径>
+
+# 示例：在10195端口加载NEU-DET模型
 fastapi_gpu_CTRS2.exe 10195 NEU-DET.pt
 
-# 使用模块中的函数
-result = your_module.your_function()
-print(result)
 
 ## 目录结构
-展示项目的主要目录结构：
+主要目录结构：
 fastapi_gpu_CTRS2/
-├── _internal/
-│   └── 各类依赖库
-└── fastapi_gpu_CTRS2.exe
+├── _internal/  # 各类依赖库
+├── uploads/    # 存放检测结果的目录，首次检测时创建
+├── NEU-DET.pt  # 默认提供的检测模型
+└── fastapi_gpu_CTRS2.exe  # 执行文件
     
