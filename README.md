@@ -18,7 +18,6 @@
 
 ## 使用方法
 ```bash
-说明如何使用项目，提供示例代码或命令：# 示例代码
 cd fastapi_gpu_CTRS2 # 进入项目目录
 
 fastapi_gpu_CTRS2.exe -h # 查看使用帮助
