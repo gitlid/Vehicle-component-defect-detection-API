@@ -51,4 +51,4 @@ fastapi_gpu_CTRS2/
 ```
 
 # 验证服务
-访问 http://localhost:端口号/docs 获取交互式API文档
+成功启动服务后，访问 http://localhost:端口号/docs 获取交互式API文档
